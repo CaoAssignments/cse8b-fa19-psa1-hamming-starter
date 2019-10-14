@@ -32,8 +32,6 @@ Copy the starter code using the same command as in PSA 0. The starter code is lo
     - We use powers of 2 for parity (2<sup>0</sup>, 2<sup>1</sup>, 2<sup>2</sup>) so that the parity bit 2 (i.e. b'010) checks for all the bits in indices that has a 1 in the middle. You use b'010 as a "bit mask" to binary AND (`&`) with the index and see if this parity bit accounts for this data bit. This means each parity bit to cross-checks the other parity bits, allowing us to detect and correct errors.
 - What happens if a parity bit is flipped?
     - Same thing as if any other bit is flipped -- the bit position will correspond to the parity bit only, and so your code should flip that faulty parity bit.
-- If you are working on the "Testing hammingDecode" part:
-    - Please make sure you type the right statement in your if-statements. It should be using `!(string.equals(string))` to compare Strings instead of `!=`.
 - "Directory Omitted" error when trying to copy starter files causing files to not be copied over:
     - You are trying to copy the directory itself rather than the files in it. This is because you forgot a command line flag for cp. To find out what this is, refer back to the PA0 writeup.
 - I want to know more about StringBuilder
@@ -525,7 +523,7 @@ grep -r "System.out.println" *
 You should at this point have three sections in README.md - the debugging code, style fixes and questions, and the StringBuilder vs Strings time comparison. 
 
 In a fifth section labelled "Summary", answer the following questions. Keep the summaries short but to the point (about 2-4 sentences). Submit README.md to Gradescope.
-1. How did the tests you wrote in the hammingDecode() tester portion affect your work when writing your actual Hamming Code? 
+1. How did the tests you wrote in the `HammingTest.java` tester portion, if you wrote them, affect your work when writing your actual Hamming Code? 
 1. **Give a general description of how Hamming Code works.** Describe the general intention and procedure, as well as your methodology. The audience of this summary is anyone who does not know any programming or computer science at all. As a rule of thumb, write concisely for someone who has to read ten summaries all at once. This means use absolutely **no Java or CSE terms** like "methods" and "variables". High-level terms like "program" are fine. 
 
 ### Style 
